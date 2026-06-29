@@ -1,26 +1,69 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-primary: #CF3147; /* Crimson Accent */
+  --color-primary-hover: #591F28; /* Deep Burgundy hover */
+  --color-burgundy: #591F28; /* Deep Burgundy */
+  --color-charcoal: #262626; /* Charcoal Black */
+  --color-ivory: #F2EBE7; /* Warm Ivory */
+  --color-cream: #F2EBE7;
+  
+  --font-serif: var(--font-jakarta), sans-serif;
+  --font-sans: var(--font-inter), sans-serif;
+  
+  --animate-kenburns: kenburns 25s ease infinite alternate;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes kenburns {
+  0% {
+    transform: scale(1) translate(0, 0);
+  }
+  100% {
+    transform: scale(1.12) translate(-1%, -0.5%);
   }
 }
 
+:root {
+  --background: #F2EBE7;
+  --foreground: #262626;
+}
+
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F2EBE7;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CF3147;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #591F28;
+}
+
+/* Glassmorphism utility */
+.glass-panel {
+  background: rgba(242, 235, 231, 0.78);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(38, 38, 38, 0.08);
+}
+
+.glass-panel-dark {
+  background: rgba(38, 38, 38, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }

@@ -1,0 +1,17 @@
+export const RESORT_IMAGES = {
+  heroLandscape: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1920&q=85",
+  aerialView: "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=1920&q=85",
+  resortExterior: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
+  luxuryRoom: "https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=1200&q=80",
+  villa: "https://images.unsplash.com/photo-1583037189850-1921ae7c6c22?auto=format&fit=crop&w=1200&q=80",
+  infinityPool: "https://images.unsplash.com/photo-1560200353-ce0a76b1d438?auto=format&fit=crop&w=1200&q=80",
+  restaurant: "https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=1200&q=80",
+  spa: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=1200&q=80",
+  scenicBreakfast: "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=1200&q=80",
+  natureTrail: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=1200&q=80",
+  receptionLobby: "https://images.unsplash.com/photo-1498503182468-3b51cbb6cb24?auto=format&fit=crop&w=1200&q=80",
+  coupleResort: "https://images.unsplash.com/photo-1475503572774-15a45e5d60b9?auto=format&fit=crop&w=1200&q=80",
+  familyVacation: "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&w=1200&q=80",
+  bonfireEvening: "https://images.unsplash.com/photo-1534067783941-51c9c23eccfd?auto=format&fit=crop&w=1200&q=80",
+  sunsetView: "https://images.unsplash.com/photo-1472214222541-d510753a4707?auto=format&fit=crop&w=1200&q=80",
+};
