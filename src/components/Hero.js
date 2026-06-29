@@ -32,7 +32,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative h-screen w-full overflow-hidden flex flex-col justify-between">
+    <section className="relative min-h-screen lg:h-screen w-full overflow-hidden flex flex-col justify-between py-12 lg:py-0">
       {/* Background Image with Ken Burns effect */}
       <div className="absolute inset-0 z-0">
         <div 
@@ -43,8 +43,8 @@ export default function Hero() {
       </div>
 
       {/* Hero Content */}
-      <div className="relative z-20 flex-grow flex items-center justify-center px-6 md:px-12 pt-28">
-        <div className="max-w-4xl text-center text-white space-y-6 md:space-y-8">
+      <div className="relative z-20 flex-grow flex items-center justify-center px-6 md:px-12 pt-32 pb-8 lg:pb-0">
+        <div className="max-w-4xl text-center text-white space-y-4 md:space-y-8">
           {/* Rating Badge */}
           <motion.div
             initial={{ opacity: 0, y: -20 }}
@@ -67,7 +67,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.2 }}
-            className="font-serif text-4xl sm:text-5xl md:text-7xl font-bold tracking-wide leading-tight text-[#F2EBE7]"
+            className="font-serif text-3xl sm:text-5xl md:text-7xl font-bold tracking-wide leading-tight text-[#F2EBE7]"
           >
             Experience Tranquil Luxury <br />
             <span className="italic font-light text-[#CF3147]">&amp; Timeless Heritage</span>
@@ -78,7 +78,7 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.6 }}
-            className="max-w-xl mx-auto text-sm sm:text-base md:text-lg text-[#F2EBE7]/80 font-sans font-light tracking-wider leading-relaxed"
+            className="max-w-xl mx-auto text-xs sm:text-base text-[#F2EBE7]/80 font-sans font-light tracking-wider leading-relaxed"
           >
             A premium luxury retreat nestled in Kharagpur, West Bengal. Unwind in garden cottages, experience authentic regional dining, and celebrate life's golden moments.
           </motion.p>
@@ -88,7 +88,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.8 }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4"
+            className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2 md:pt-4"
           >
             <button
               onClick={() => document.getElementById("cottages")?.scrollIntoView({ behavior: "smooth" })}

@@ -12,7 +12,15 @@ export default function About() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
           
           {/* Staggered Visual Collage */}
-          <div className="lg:col-span-7 grid grid-cols-12 gap-4 relative">
+          <div className="lg:col-span-7 grid grid-cols-12 gap-4 relative py-6">
+            {/* Background Resort Image behind the mini images */}
+            <div className="absolute inset-0 z-0 opacity-15 rounded-3xl overflow-hidden -m-4">
+              <img
+                src={RESORT_IMAGES.aerialView}
+                alt="Resort Aerial Background"
+                className="w-full h-full object-cover filter blur-[2px]"
+              />
+            </div>
             <div className="absolute inset-0 bg-[#CF3147]/5 rounded-3xl -m-6 lg:-m-8 z-0 pointer-events-none" />
             
             {/* Main Image */}

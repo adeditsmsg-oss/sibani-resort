@@ -12,6 +12,6 @@ export const RESORT_IMAGES = {
   receptionLobby: "https://images.unsplash.com/photo-1498503182468-3b51cbb6cb24?auto=format&fit=crop&w=1200&q=80",
   coupleResort: "https://images.unsplash.com/photo-1475503572774-15a45e5d60b9?auto=format&fit=crop&w=1200&q=80",
   familyVacation: "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&w=1200&q=80",
-  bonfireEvening: "https://images.unsplash.com/photo-1534067783941-51c9c23eccfd?auto=format&fit=crop&w=1200&q=80",
+  bonfireEvening: "https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=1200&q=80",
   sunsetView: "https://images.unsplash.com/photo-1472214222541-d510753a4707?auto=format&fit=crop&w=1200&q=80",
 };
